@@ -1,13 +1,17 @@
 import shrek from "../../Assets/Hero/shrek.jpeg";
-const Hero = () => {
+import { FC } from "react";
+import { HeroProps } from "./HeroProps.types";
+
+const Hero: FC<HeroProps> = ({ image, children }) => {
   return (
-    <div className="w-full">
+    <header className="bg-slate-900 h-fit flex justify-center content-center">
       <img
-        className="w-full aspect-video"
-        src={shrek}
+        className="w-full aspect-video lg:aspect-[16/5] object-cover opacity-50"
+        src={image}
         alt="shrek looking almighty"
       />
-    </div>
+      <div className="absolute text-8xl">{children}</div>
+    </header>
   );
 };
 
