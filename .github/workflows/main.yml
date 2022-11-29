@@ -14,7 +14,7 @@ jobs:
       - name: 📂 Sync Files
         uses: SamKirkland/web-deploy@v1
         with:
-          target-server: ssh.vinterfjell.dk
+          target-server: vinterfjell.dk
           remote-user: ${{ secrets.ftp_username }}
           private-ssh-key: ${{ secrets.ftp_password }}
           destination-path: ~/destinationFolder/
