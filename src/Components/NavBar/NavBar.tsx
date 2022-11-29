@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="flex justify-center gap-4 p-10">
-      <a href="#">Skills</a>
-      <a href="#">Employment</a>
-      <a href="#">Strengths/ Weaknesses</a>
-      <a href="#">Technologies</a>
-      <a href="#">Projects</a>
+    <div className="flex justify-center gap-4 p-10 lg:text-lg text-white uppercase lg:font-semibold bg-gray-800 border-b border-b-gray-200/50">
+      <Link to="/about">About</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/">Skills</Link>
+      <Link to="/technologies">Technologies</Link>
     </div>
   );
 };
