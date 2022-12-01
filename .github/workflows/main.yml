@@ -17,4 +17,4 @@ jobs:
           target-server: ssh.vinterfjell.dk
           remote-user: ${{ secrets.ftp_username }}
           private-ssh-key: ${{ secrets.ftp_password }}
-          destination-path: ~/httpd.www/
+          destination-path: ~/customers/b/9/1/vinterfjell.dk/httpd.www/
