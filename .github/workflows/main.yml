@@ -15,7 +15,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{ secrets.ftp_username }}
-          server: vinterfjell.dk@ssh.vinterfjell.dk
+          server: ssh.vinterfjell.dk
           local_path: "./static/*"
           remote_path: "/httpd.www/"
           sftp_only: true
