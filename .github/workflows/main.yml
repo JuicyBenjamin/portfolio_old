@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     name: deploy
     steps:
-        - name: Checkout
-        uses: actions/checkout@v2
-        - name: Deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: ${{ secrets.ftp_username }}
-            server: vinterfjell.dk@ssh.vinterfjell.dk
-            local_path: './static/*'
-            remote_path: '/httpd.www/'
-            sftp_only: true
-            password: ${{ secrets.ftp_password }}
+          - name: Checkout
+          uses: actions/checkout@v2
+          - name: Deploy file
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+              username: ${{ secrets.ftp_username }}
+              server: vinterfjell.dk@ssh.vinterfjell.dk
+              local_path: './static/*'
+              remote_path: '/httpd.www/'
+              sftp_only: true
+              password: ${{ secrets.ftp_password }}
